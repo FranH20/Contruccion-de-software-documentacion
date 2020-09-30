@@ -39,7 +39,7 @@
 \pagestyle{fancy} 
 \fancyhead{} 
 \fancyfoot{} 
-\fancyhead[C]{Trabajo de la Unidad I: Proyecto TREVA $\bullet$ Junio 2020 $\bullet$ } 
+\fancyhead[C]{Trabajo de la Unidad$\bullet$ Septienmbre 2020 $\bullet$ } 
 \fancyfoot[RO,LE]{\thepage} 
 
 
@@ -47,6 +47,7 @@
 
 
 \usepackage{hyperref} 
+\rmfamily
 
 
 %----------------------------------------------------------------------------------------
@@ -59,21 +60,17 @@
 \pretitle{\begin{center}\Huge\bfseries} 
 \posttitle{\end{center}} 
 \title{Implementación de Call Center y asistencia para el poder judicial} 
-\author{Samuel  - Franklin Carlos, Huichi Contreras, \\
+\author{Samuel Nuñez Mamani - Franklin Carlos, Huichi Contreras, \\
 Anthony Robles Flores. }
 \date{\today} 
 \renewcommand{\maketitlehookd}{
 \begin{abstract}
 \noindent 
-Determino las estrategias que debiera tenerse en cuenta para planificar, estructurar y finalmente escribir un articulo o “paper” de Ciencias Sociales
-conforme a la Asociacion Americana de Psicologa (APA) Sexta Edicion. Se pretende que el lector produzca su propio trabajo.
+El presente proyecto pretendió mejorar la calidad de atención de la Corte Superior de Justicia de Tacna y se enfocó en funcionalidades de asistencia y automatización de procesos y/o servicios mediante el uso de tecnologías de información. Se realizó una investigación y análisis de procesos de la institución para delimitar el alcance de esta solución. Se utilizaron herramientas como React Native, Firebase, Voximplant y DialogFlow para la construcción de la solución. Luego de implementar la propuesta, se observó un incremento en la recepción de trámites de la población de la zona y de acuerdo a una encuesta realizada, esta indicaba que un gran porcentaje de usuarios se sentía satisfecho con este canal al poder ahora recibir atención de manera casi inmediata.
 \end{abstract}
 \begin{abstract}
 \noindent 
-
-Treva es un sistema enfocado en los formularios de satisfacion del cliente en donde el propietario podra generar formularios y enviar cada cierto tiempo a sus empleado o interesados para que puedan llenarlo segun
-las opciones que cuenta el formulario, a partir de esos datos podemos al propietario dar estadisticas en la cual puede verificar que opciones escogieron los clientes o empleados, y aparte de ello podemos analizar los datos
-para dar recomendaciones o proyecciones estimadas de areas especificas.
+The present project aimed to improve the quality of attention of the Superior Court of Justice of Tacna and focused on functionalities of assistance and automation of processes and / or services through the use of information technologies. An investigation and analysis of the institution's processes was carried out to define the scope of this solution. Tools such as React Native, Firebase, Voximplant and DialogFlow were used to build the solution. After implementing the proposal, an increase in the reception of procedures from the population of the area was observed and according to a survey carried out, this indicated that a large percentage of users felt satisfied with this channel as they can now receive attention in a manner almost immediate.
 
 \end{abstract}
 }
@@ -90,7 +87,7 @@ para dar recomendaciones o proyecciones estimadas de areas especificas.
 %----------------------------------------------------------------------------------------
 
 \section{Introduccion}
-Los centros de llamada operadas o de contacto  hoy en dia por personal es una proveedora de servicios que se encarga de dar soporte y administrar dependiendo los servicios o solicitudes que las empresas proveen. Estos Centros de contactos normalmente son operados en instalaciones que cuentan con equipos como computadoras, telefonos, microfonos,etc. Estos centros suelen estar conectados con algun otro centro o tambien son prestadoras de servicios de estaciones ya establecidas.\\
+Los centros de llamadas operadas o de contacto  hoy en dia por personal es una proveedora de servicios que se encarga de dar soporte y administrar dependiendo los servicios o solicitudes que las empresas proveen. Estos Centros de contactos normalmente son operados en instalaciones que cuentan con equipos como computadoras, telefonos, microfonos,etc. Estos centros suelen estar conectados con algun otro centro o tambien son prestadoras de servicios de estaciones ya establecidas.\\
 Actualmente las mas reconocidas e importantes empresas usan centros de contacto para realizar una interaccion con los clientes entre ellos podemos 
 contar firmas para pedidos por catalogo, soportes operativos, atencion al cliente, etc.
 
@@ -116,81 +113,76 @@ software que logre mejorar la atencion de las personas que tengan dudas o consul
 
 \section{Objetivos}
 \subsection{General}
-Determinar el nivel de satisfaccion de los clientes de las empresas afiliadas a treva
+Mejorar la calidad de atención de la Corte Superior de Justicia de Tacna a la población
 
 \subsection{Especificos}
 \begin{itemize}
-\item Mejorar el rendimiento de las empresas con reportes estadisticos en las encuestas realizadas sobre el nivel de satisfaccion de los clientes, que se usaran para la toma de desiciones.
-\item Comparar los grados de satisfacción de los clientes periodicamente.
-\item Definir la relación real entre encuestas y satisfacción del cliente.
+\item Establecer un canal de comunicación por voz automatizado que responda a las solicitudes de las personas.
+\item Procesar la mayor cantidad de solicitudes.
+\item Resolver consultas inmediatas que no requieran de apersonarse a la institución.
 \end{itemize}
 
 \section{Descripcíon del Proyecto}
-\subsection{Problematica}
-Actualmente a nivel Mundial la aparición del Covid19 a provocado un desorden Global, para que este virus no se propaguenuestro Gobierno fue obligado a decretar un "Estado de Emergencia" a nivel nacional provocando asi una paralización brusca en la gran mayoria de trabajos.
+\subsection{Problemática}
+Actualmente a nivel Mundial la aparición del Covid19 a provocado un desorden Global, para que este virus no se propague, nuestro Gobierno fue obligado a decretar un "Estado de Emergencia" a nivel nacional provocando asi una paralización brusca en la gran mayoría de trabajos.
 \\
 Esto provocó un adaptamiento brusco a continuar con las jornadas laborales pero de forma virtual , utilizando asi todos los canales de comunicación posibles.
 El personal de muchas organizaciones pasaron de sus jornadas agregando un plus extra el cual es estar pendiente en todos los canales de comunicación para el usuario.
 \\
-El Poder Judicial de Tacna, atraviesa esta situación provocando que las jornadas sean prescenciales y virtuales, sumandole a esto una saturación constante de llamadas para  interrogantes existentes por parte del usuario provocando asi un retraso en sus actividades cotidianas y también una molestia constante por la gran cantidad de llamadas entrantes a su respectivo anexo como resultado llevarlos a un cuadro de estrés que en un futuro podría perjudicarles en su labores.
+El Poder Judicial de Tacna, atraviesa esta situación provocando que las jornadas sean presenciales y virtuales, sumándole a esto una saturación constante de llamadas de   interrogantes existentes por parte del usuario provocando asi un retraso en sus actividades cotidianas y también una molestia constante por la gran cantidad de llamadas entrantes a su respectivo anexo como resultado llevarlos a un cuadro de estrés que en un futuro podría perjudicarles en su labores.
+
 \subsection{Propuesta de Solución}
-Para solucionar esta problematica existente en el poder judicial tomando en cuenta estos tiempos de la pandemia donde el asilamiento social a provocado un desvalance en las actividades normales de los trabajadores en esta entidad sobrecargando con labores adicionales para el proceso de adaptamiento a este contexto en el que vivimos , la implementacion de un Call Center podria agilizar los procesos de los trabajadores donde un asistente podria solucionar las interrogantes que podrian tener los usuarios antes que un trabajador interno pueda intervenir, pero en caso el asistente no pudiese resolver esta duda , el mismo call center podria derivar a un anexo a poder comunicarse via telefonica con un asesor legal.
+Para solucionar esta problemática existente en el poder judicial tomando en cuenta estos tiempos de la pandemia donde el asilamiento social a provocado un desbalance en las actividades normales de los trabajadores en esta entidad sobrecargando con labores adicionales para el proceso de adaptamiento a este contexto en el que vivimos , la implementacion de un Call Center podría agilizar los procesos de los trabajadores donde un asistente podria solucionar las interrogantes que podrian tener los usuarios antes que un trabajador interno pueda intervenir, pero en caso el asistente no pudiese resolver esta duda , el mismo call center podria derivar a un anexo a poder comunicarse vía telefonica con un asesor legal.
 \\
-Viendo que existen diferentes canales de comunicacion,  en el momento de interactuar con el usuario , proponemos tambien una aplicacion Movil en Android donde este prodra otorgar los mismos servicios añadiendo tambien la facilidad al usuario de poder ubicar las oficinas de acuerdo a la sucursal en la que necesiter asistir a una cita programada , como tambie  el llenado de formularios con formatos ya establecidos por el poder judicial donde hay algunos documetos que no se necesiten la evaluacion de un abogado y como resultado la aplicacion podria descargar un PDF con los datos solicitados usando el formato de documentos del Poder Judicial.
+Viendo que existen diferentes canales de comunicación,  en el momento de interactuar con el usuario , proponemos tambien una aplicacion Móvil en Android donde este prodrá otorgar los mismos servicios añadiendo tambien la facilidad al usuario de poder ubicar las oficinas de acuerdo a la sucursal en la que necesiter asistir a una cita programada , como tambien  el llenado de formularios con formatos ya establecidos por el poder judicial donde hay algunos documetos que no se necesiten la evaluacion de un abogado y como resultado la aplicacion podría descargar un PDF con los datos solicitados usando el formato de documentos del Poder Judicial.
 \\
 Tomando en cuenta que la tecnologia de tener un SmartPhone invade cada vez mas a la sociedad , incluir un módulo en el aplicativo acerca de las audiencias que el poder judicial publicará asi el usuario externo podría tener a la mano esta información a fin de poder asistir y estar pendientes puesto que en la web se encuentra el cronograma pero ubicar una audiencia para aquellos que desconocen el uso de una plataforma web podria ser dificultoso , la aplicacion movil podria ayudar a que sera mas sencillo y rápido de identificar una audiencia.
 
-\subsection{Tecnologia de informacion}
+\subsection{Tecnología de información}
 En esta seccion definiremos las herramientas que se utilizaran para el desarrollo del proyecto asi mismos las plataformas que se emplearan para las conexiones en algunos servicios.
 \begin{itemize}
 \item Plataforma Colaborativa
-\subitem Github
-\subitem Google Meet
-\subitem Teams Microsoft
+\subitem Github : Una herramienta colaborativa muy útil en el control de versiones para el desarrollo de un Proyecto de Software con la capacidad de poder crear ramas para el crecimiento en escala de menor a mayor de un Sistema.
+\subitem Google Meet : Una aplicación de videoconferencia que permitirá a los integrantes de grupo poder entablar una comunicación virtual para poder facilitar el trabajo en equipo.
+\subitem Teams Microsoft : Plan de contigencia en caso el Google meet pueda caer, puede ser usado puesto que la propia Universidad Privada de Tacna puede otorgar a los estudiantes para realizar videconferencias interactivas con los integrantes del grupo de proyecto con múltiples herramientas que ayudarán para la colaboracion en la elaboración de este proyecto.
 \item Base de Datos:
-\subitem Firebase.
+\subitem Firebase RealTime DataBase : Nos permitirá sincronizar datos con nuestra Base de Datos NoSQL alojada en la nube, estos datos se sincronizaran con todos los clientes en tiempo real.
 \item Lenguajes de programación:
-\subitem Java.
+\subitem Lenguaje Java.
+\item Entorno de Desarrollo:
+\subitem Android Studio : Entorno que nos permitirá desarrollar aplicaciones móviles.
 \item Asistente Virtual:
-\subitem DialogFlow.
+\subitem DialogFlow : Plataforma que nos permitirá agentes virtuales o asistentes virtuales para una futura integración en multiples canales de comunicación.
 \item Red Telefonica:
 \subitem VoximPlant.
 \end{itemize}
 
+\subsection{Arquitectura del Call Center}
+
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[width=7.5cm]{./Imagenes/callcenter} 
+		\caption{Call Center}
+	\end{center}
+\end{figure}
+
+
 \subsection{Metodología}
 La metodologia que usaremos será RUP (Proceso Unificado de Rational)puesto que esta metodología provee un entorno de desarrollo flexible basado en estándares que se adapta a las necesidades del desarrollador o de las empresas y tener la facilidad de dividir todas las actividades de forma de que a cada participantele pueda tocar la parte que le compete.
+\subsection{Arquitectura de la Aplicación}
 
-
-
-\section{Desarrollo de Solución de Mejora}
-
-\subsection{Casos de Uso de la aplicación}
 \begin{figure}[h!]
 	\begin{center}
-		\includegraphics[width=7.5cm]{./Imagenes/use_case} 
-		\caption{Use case}
+		\includegraphics[width=7.5cm]{./Imagenes/apk} 
+		\caption{Aplicación Movil}
 	\end{center}
 \end{figure}
 
-\subsection{Diagrama de Arquitectura de la aplicación}
-Diagrama de Arquitectura de la aplicación
-\begin{figure}[h!]
-	\begin{center}
-		\includegraphics[width=7.5cm]{./Imagenes/bd_architecture} 
-		\caption{bd architecture}
-	\end{center}
-\end{figure}
+\section{Resultados}
 
-\subsection{Diagrama de Clases de la aplicación}
-Diagrama de Clases de la aplicación
-\begin{figure}[h!]
-	\begin{center}
-		\includegraphics[width=7.5cm]{./Imagenes/diagramclass} 
-		\caption{Diagram Class}
-	\end{center}
-\end{figure}
+Entre los hallazgos más destacables se notó que 
 
-
+\section{Conclusiones}
+Con los resultados expuestos observamos que el empleo oportuno de tecnologías de información como los bots y asistentes virtuales demuestran tener bastante potencial para contribuir a la mejora y alza de movimiento en los procesos de un negocio, en este caso de la Corte Superior de Justicia de Tacna.
 
 \end{document}
-
